@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6011219D1A2C508E004CDE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011219C1A2C508E004CDE18 /* AppDelegate.swift */; };
+		6011219F1A2C508E004CDE18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6011219E1A2C508E004CDE18 /* Images.xcassets */; };
+		601121A21A2C508E004CDE18 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601121A01A2C508E004CDE18 /* MainMenu.xib */; };
+		601121AE1A2C508E004CDE18 /* GradientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601121AD1A2C508E004CDE18 /* GradientsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		601121A81A2C508E004CDE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6011218F1A2C508E004CDE18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601121961A2C508E004CDE18;
+			remoteInfo = Gradients;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		601121971A2C508E004CDE18 /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6011219B1A2C508E004CDE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6011219C1A2C508E004CDE18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6011219E1A2C508E004CDE18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		601121A11A2C508E004CDE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		601121A71A2C508E004CDE18 /* GradientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		601121AC1A2C508E004CDE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601121AD1A2C508E004CDE18 /* GradientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601121941A2C508E004CDE18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601121A41A2C508E004CDE18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6011218E1A2C508E004CDE18 = {
+			isa = PBXGroup;
+			children = (
+				601121991A2C508E004CDE18 /* Gradients */,
+				601121AA1A2C508E004CDE18 /* GradientsTests */,
+				601121981A2C508E004CDE18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		601121981A2C508E004CDE18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601121971A2C508E004CDE18 /* Gradients.app */,
+				601121A71A2C508E004CDE18 /* GradientsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		601121991A2C508E004CDE18 /* Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				6011219C1A2C508E004CDE18 /* AppDelegate.swift */,
+				6011219E1A2C508E004CDE18 /* Images.xcassets */,
+				601121A01A2C508E004CDE18 /* MainMenu.xib */,
+				6011219A1A2C508E004CDE18 /* Supporting Files */,
+			);
+			path = Gradients;
+			sourceTree = "<group>";
+		};
+		6011219A1A2C508E004CDE18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6011219B1A2C508E004CDE18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		601121AA1A2C508E004CDE18 /* GradientsTests */ = {
+			isa = PBXGroup;
+			children = (
+				601121AD1A2C508E004CDE18 /* GradientsTests.swift */,
+				601121AB1A2C508E004CDE18 /* Supporting Files */,
+			);
+			path = GradientsTests;
+			sourceTree = "<group>";
+		};
+		601121AB1A2C508E004CDE18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				601121AC1A2C508E004CDE18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601121961A2C508E004CDE18 /* Gradients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601121B11A2C508E004CDE18 /* Build configuration list for PBXNativeTarget "Gradients" */;
+			buildPhases = (
+				601121931A2C508E004CDE18 /* Sources */,
+				601121941A2C508E004CDE18 /* Frameworks */,
+				601121951A2C508E004CDE18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gradients;
+			productName = Gradients;
+			productReference = 601121971A2C508E004CDE18 /* Gradients.app */;
+			productType = "com.apple.product-type.application";
+		};
+		601121A61A2C508E004CDE18 /* GradientsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601121B41A2C508E004CDE18 /* Build configuration list for PBXNativeTarget "GradientsTests" */;
+			buildPhases = (
+				601121A31A2C508E004CDE18 /* Sources */,
+				601121A41A2C508E004CDE18 /* Frameworks */,
+				601121A51A2C508E004CDE18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601121A91A2C508E004CDE18 /* PBXTargetDependency */,
+			);
+			name = GradientsTests;
+			productName = GradientsTests;
+			productReference = 601121A71A2C508E004CDE18 /* GradientsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6011218F1A2C508E004CDE18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Orta Therox";
+				TargetAttributes = {
+					601121961A2C508E004CDE18 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					601121A61A2C508E004CDE18 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 601121961A2C508E004CDE18;
+					};
+				};
+			};
+			buildConfigurationList = 601121921A2C508E004CDE18 /* Build configuration list for PBXProject "Gradients" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6011218E1A2C508E004CDE18;
+			productRefGroup = 601121981A2C508E004CDE18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				601121961A2C508E004CDE18 /* Gradients */,
+				601121A61A2C508E004CDE18 /* GradientsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601121951A2C508E004CDE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6011219F1A2C508E004CDE18 /* Images.xcassets in Resources */,
+				601121A21A2C508E004CDE18 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601121A51A2C508E004CDE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601121931A2C508E004CDE18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6011219D1A2C508E004CDE18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601121A31A2C508E004CDE18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601121AE1A2C508E004CDE18 /* GradientsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		601121A91A2C508E004CDE18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601121961A2C508E004CDE18 /* Gradients */;
+			targetProxy = 601121A81A2C508E004CDE18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		601121A01A2C508E004CDE18 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601121A11A2C508E004CDE18 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601121AF1A2C508E004CDE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		601121B01A2C508E004CDE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		601121B21A2C508E004CDE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gradients/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		601121B31A2C508E004CDE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gradients/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		601121B51A2C508E004CDE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GradientsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/Contents/MacOS/Gradients";
+			};
+			name = Debug;
+		};
+		601121B61A2C508E004CDE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GradientsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/Contents/MacOS/Gradients";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601121921A2C508E004CDE18 /* Build configuration list for PBXProject "Gradients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601121AF1A2C508E004CDE18 /* Debug */,
+				601121B01A2C508E004CDE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601121B11A2C508E004CDE18 /* Build configuration list for PBXNativeTarget "Gradients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601121B21A2C508E004CDE18 /* Debug */,
+				601121B31A2C508E004CDE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		601121B41A2C508E004CDE18 /* Build configuration list for PBXNativeTarget "GradientsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601121B51A2C508E004CDE18 /* Debug */,
+				601121B61A2C508E004CDE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6011218F1A2C508E004CDE18 /* Project object */;
+}
