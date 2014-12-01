@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Gradients
-//
-//  Created by Orta on 01/12/2014.
-//  Copyright (c) 2014 Orta Therox. All rights reserved.
-//
-
 import Cocoa
 
 @NSApplicationMain

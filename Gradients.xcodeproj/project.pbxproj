@@ -10,18 +10,9 @@
 		6011219D1A2C508E004CDE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011219C1A2C508E004CDE18 /* AppDelegate.swift */; };
 		6011219F1A2C508E004CDE18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6011219E1A2C508E004CDE18 /* Images.xcassets */; };
 		601121A21A2C508E004CDE18 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601121A01A2C508E004CDE18 /* MainMenu.xib */; };
-		601121AE1A2C508E004CDE18 /* GradientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601121AD1A2C508E004CDE18 /* GradientsTests.swift */; };
+		601121B91A2C50EB004CDE18 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601121B81A2C50EB004CDE18 /* GradientView.swift */; };
+		601121BB1A2C88C8004CDE18 /* GradientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601121BA1A2C88C8004CDE18 /* GradientController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		601121A81A2C508E004CDE18 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6011218F1A2C508E004CDE18 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 601121961A2C508E004CDE18;
-			remoteInfo = Gradients;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		601121971A2C508E004CDE18 /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,20 +20,14 @@
 		6011219C1A2C508E004CDE18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6011219E1A2C508E004CDE18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		601121A11A2C508E004CDE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		601121A71A2C508E004CDE18 /* GradientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		601121AC1A2C508E004CDE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		601121AD1A2C508E004CDE18 /* GradientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsTests.swift; sourceTree = "<group>"; };
+		601121B81A2C50EB004CDE18 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		601121BA1A2C88C8004CDE18 /* GradientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		601121941A2C508E004CDE18 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		601121A41A2C508E004CDE18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				601121971A2C508E004CDE18 /* Gradients.app */,
-				601121A71A2C508E004CDE18 /* GradientsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +57,7 @@
 		601121991A2C508E004CDE18 /* Gradients */ = {
 			isa = PBXGroup;
 			children = (
+				601121B71A2C50CD004CDE18 /* Classes */,
 				6011219C1A2C508E004CDE18 /* AppDelegate.swift */,
 				6011219E1A2C508E004CDE18 /* Images.xcassets */,
 				601121A01A2C508E004CDE18 /* MainMenu.xib */,
@@ -106,6 +91,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		601121B71A2C50CD004CDE18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				601121B81A2C50EB004CDE18 /* GradientView.swift */,
+				601121BA1A2C88C8004CDE18 /* GradientController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,24 +120,6 @@
 			productReference = 601121971A2C508E004CDE18 /* Gradients.app */;
 			productType = "com.apple.product-type.application";
 		};
-		601121A61A2C508E004CDE18 /* GradientsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 601121B41A2C508E004CDE18 /* Build configuration list for PBXNativeTarget "GradientsTests" */;
-			buildPhases = (
-				601121A31A2C508E004CDE18 /* Sources */,
-				601121A41A2C508E004CDE18 /* Frameworks */,
-				601121A51A2C508E004CDE18 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				601121A91A2C508E004CDE18 /* PBXTargetDependency */,
-			);
-			name = GradientsTests;
-			productName = GradientsTests;
-			productReference = 601121A71A2C508E004CDE18 /* GradientsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,10 +131,6 @@
 				TargetAttributes = {
 					601121961A2C508E004CDE18 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					601121A61A2C508E004CDE18 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 601121961A2C508E004CDE18;
 					};
 				};
 			};
@@ -176,7 +148,6 @@
 			projectRoot = "";
 			targets = (
 				601121961A2C508E004CDE18 /* Gradients */,
-				601121A61A2C508E004CDE18 /* GradientsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,13 +162,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		601121A51A2C508E004CDE18 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -205,27 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601121BB1A2C88C8004CDE18 /* GradientController.swift in Sources */,
+				601121B91A2C50EB004CDE18 /* GradientView.swift in Sources */,
 				6011219D1A2C508E004CDE18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		601121A31A2C508E004CDE18 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				601121AE1A2C508E004CDE18 /* GradientsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		601121A91A2C508E004CDE18 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 601121961A2C508E004CDE18 /* Gradients */;
-			targetProxy = 601121A81A2C508E004CDE18 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		601121A01A2C508E004CDE18 /* MainMenu.xib */ = {
@@ -338,42 +288,6 @@
 			};
 			name = Release;
 		};
-		601121B51A2C508E004CDE18 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GradientsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/Contents/MacOS/Gradients";
-			};
-			name = Debug;
-		};
-		601121B61A2C508E004CDE18 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GradientsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradients.app/Contents/MacOS/Gradients";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,14 +307,7 @@
 				601121B31A2C508E004CDE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		601121B41A2C508E004CDE18 /* Build configuration list for PBXNativeTarget "GradientsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				601121B51A2C508E004CDE18 /* Debug */,
-				601121B61A2C508E004CDE18 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
