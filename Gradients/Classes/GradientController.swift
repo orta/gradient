@@ -4,11 +4,18 @@ class GradientController: NSObject {
 
     @IBOutlet weak var view: GradientView!
 
+    @IBAction func redrawClicked(sender: AnyObject) {
+        view.empty()
+        addRandomPoints()
+        view.displayIfNeeded()
+    }
+
     override func awakeFromNib() {
+        addRandomPoints()
+    }
 
-        let count = 8.randomLowerInt()
-
-        for i in 0..<count {
+    func addRandomPoints() {
+        for i in (0...8).randomRange() {
             let hueRand = 360.randomLowerInt()
             let hue = CGFloat(hueRand) / 360.0
 
@@ -17,6 +24,7 @@ class GradientController: NSObject {
             let point = GradientPoint(location: randPointAroundBounds(), color: colour, strength: 400.randomLowerInt() )
             view.addGradientPoint(point)
         }
+
     }
 
     func randPointAroundBounds() -> NSPoint {
@@ -46,10 +54,17 @@ extension CGFloat {
 }
 
 extension ClosedInterval {
-    func random() -> Int {
-        let x = self.start as Int
-        let y = self.end as Int
+    func randomInt() -> Int {
+        let x = start as Int
+        let y = end as Int
         return Int(arc4random_uniform(UInt32(x))) - y
+    }
+
+    func randomRange() -> Range<Int> {
+        let x = start as Int
+        let y = end as Int
+        let top = Int(x + y).randomLowerInt() - x
+        return Range(start: x, end: top)
     }
 }
 
