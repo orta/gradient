@@ -2,30 +2,46 @@ import Cocoa
 
 class GradientController: NSObject {
 
-    @IBOutlet weak var view: GradientView!
+    var view: GradientView!
+
+    @IBOutlet weak var mainView: GradientView!
+    @IBOutlet weak var previewView: GradientView!
+
+    var colour: NSColor!
 
     @IBAction func redrawClicked(sender: AnyObject) {
-        view.empty()
-        addRandomPoints()
+        getRandomColour()
+        drawColour()
         view.displayIfNeeded()
     }
 
     override func awakeFromNib() {
-        addRandomPoints()
+        view = mainView;
+        getRandomColour()
+        drawColour()
     }
 
-    func addRandomPoints() {
-        for i in 0...1 {
-            let hueRand = 360.randomLowerInt()
-            let hue = CGFloat(hueRand) / 360.0
-
-            let colour = NSColor(calibratedHue:hue, saturation: 0.398, brightness: 0.773, alpha: 1.0)
-
-            let point = GradientPoint(startColour: colour, endColour:NSColor.blackColor());
-
-            view.addGradientPoint(point)
+    func switchViews() {
+        if view == mainView {
+            view = previewView
+        } else {
+            view = mainView;
         }
+        drawColour()
+    }
 
+    func getRandomColour() {
+        let hueRand = 360.randomLowerInt()
+        let hue = CGFloat(hueRand) / 360.0
+
+        colour = NSColor(calibratedHue:hue, saturation: 0.398, brightness: 0.773, alpha: 1.0)
+    }
+
+    func drawColour() {
+        let point = GradientPoint(startColour: colour, endColour:NSColor.blackColor());
+
+        view.empty()
+        view.addGradientPoint(point)
     }
 
     func randPointAroundBounds() -> NSPoint {
