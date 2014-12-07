@@ -15,13 +15,14 @@ class GradientController: NSObject {
     }
 
     func addRandomPoints() {
-        for i in (0...8).randomRange() {
+        for i in 0...1 {
             let hueRand = 360.randomLowerInt()
             let hue = CGFloat(hueRand) / 360.0
 
             let colour = NSColor(calibratedHue:hue, saturation: 0.398, brightness: 0.773, alpha: 1.0)
 
-            let point = GradientPoint(location: randPointAroundBounds(), color: colour, strength: 400.randomLowerInt() )
+            let point = GradientPoint(startColour: colour, endColour:NSColor.blackColor());
+
             view.addGradientPoint(point)
         }
 

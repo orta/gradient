@@ -1,17 +1,20 @@
 import Cocoa
 
 struct GradientPoint {
-    let location:NSPoint
-    let color:NSColor
-    let strength:Int
+//    let location:NSPoint
+    let startColour:NSColor
+    let endColour:NSColor
+
+//    let strength:Int
 
     func createGradient() -> NSGradient {
-        return NSGradient(startingColor: color, endingColor: NSColor.clearColor())
+        return NSGradient(startingColor: startColour, endingColor: endColour)
     }
 
     func drawIntoRect(rect: NSRect) {
         let gradient = createGradient()
-        gradient.drawFromCenter(location, radius: 0, toCenter: location, radius: CGFloat(strength), options: NSGradientDrawsBeforeStartingLocation)
+        let endPoint = NSPoint(x: rect.size.width, y: 0);
+        gradient.drawFromPoint(NSPoint(x: 0, y: 0), toPoint: endPoint, options: NSGradientDrawsBeforeStartingLocation);
     }
 }
 
