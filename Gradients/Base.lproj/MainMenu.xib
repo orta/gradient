@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="14C68k" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="14C81f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
     </dependencies>
@@ -615,6 +615,73 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="Hue" id="MM2-a2-JbO">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Hue" id="KH1-uc-UlC">
+                        <items>
+                            <menuItem title="0.1" keyEquivalent="1" id="pZX-VB-cNX">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="o6U-r3-Dah"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.2" keyEquivalent="2" id="cRS-fe-guY">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="h3L-xi-rQQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.3" keyEquivalent="3" id="45a-qh-AcL">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="ohy-Gh-fWM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.4" keyEquivalent="4" id="F7Q-N4-C0g">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="t6Y-NY-OQp"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.5" keyEquivalent="5" id="kQt-zr-0Kw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="8o5-3b-gWl"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.6" keyEquivalent="6" id="pR0-ue-Xsk">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="e8o-sg-bQy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.7" keyEquivalent="7" id="frY-4k-geg">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="BtW-wk-zfL"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.8" keyEquivalent="8" id="hra-Iv-ot5">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="qZb-At-Ab3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="0.9" keyEquivalent="9" id="P10-pf-DJV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="07H-DD-o21"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="1.0" keyEquivalent="0" id="gNC-nz-F1d">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="changeHue:" target="wgB-at-BeW" id="61b-Q4-Rc6"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
                 <menuItem title="View" id="H8h-7b-M4v">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="View" id="HyV-fh-RgO">
@@ -682,12 +749,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="412"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView id="EaM-Jz-nIR" customClass="GradientView" customModule="Gradients" customModuleProvider="target">
-                        <rect key="frame" x="20" y="60" width="440" height="320"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </customView>
                     <button verticalHuggingPriority="750" id="IfL-Qq-TJs">
-                        <rect key="frame" x="374" y="12" width="88" height="32"/>
+                        <rect key="frame" x="378" y="13" width="88" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Redraw" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5CB-c4-fbN">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -697,12 +760,37 @@
                             <action selector="redrawClicked:" target="wgB-at-BeW" id="ukA-sF-obi"/>
                         </connections>
                     </button>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" id="v4e-di-PRV">
+                        <rect key="frame" x="-1" y="59" width="482" height="333"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="ZMR-RW-UgM">
+                            <rect key="frame" x="1" y="1" width="166" height="79"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <customView id="EaM-Jz-nIR" customClass="GradientView" customModule="Gradients" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="331"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </customView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Cax-Sd-6QS">
+                            <rect key="frame" x="1" y="80" width="166" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="axf-s2-n35">
+                            <rect key="frame" x="167" y="1" width="15" height="79"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                     <button verticalHuggingPriority="750" id="E8C-6f-giv" customClass="ORUpAndDownButton">
-                        <rect key="frame" x="150" y="13" width="193" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Hold to Preview Desktop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Fs-gJ-6e5">
+                        <rect key="frame" x="185" y="13" width="193" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Hold to Preview Desktop" bezelStyle="rounded" alignment="center" continuous="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Fs-gJ-6e5">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+IA
+</string>
                         </buttonCell>
                         <connections>
                             <outlet property="delegate" destination="tIA-GZ-yDY" id="rlg-Ky-THN"/>

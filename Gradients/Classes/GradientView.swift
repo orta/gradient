@@ -1,11 +1,8 @@
 import Cocoa
 
 struct GradientPoint {
-//    let location:NSPoint
     let startColour:NSColor
     let endColour:NSColor
-
-//    let strength:Int
 
     func createGradient() -> NSGradient {
         return NSGradient(startingColor: startColour, endingColor: endColour)

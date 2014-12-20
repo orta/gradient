@@ -2,6 +2,7 @@ import Cocoa
 
 class GradientController: NSObject {
 
+    var hue = 360.randomLowerInt()
     var view: GradientView!
 
     @IBOutlet weak var mainView: GradientView!
@@ -9,15 +10,27 @@ class GradientController: NSObject {
 
     var colour: NSColor!
 
+    @IBAction func changeHue(sender: NSMenuItem) {
+        let numberFormatter = NSNumberFormatter()
+        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        let huePercent = numberFormatter.numberFromString(sender.title)
+
+        hue = Int(360.0 * huePercent!.floatValue)
+        makeColour()
+        drawColour()
+    }
+    
     @IBAction func redrawClicked(sender: AnyObject) {
-        getRandomColour()
+        hue = 360.randomLowerInt()
+        makeColour()
         drawColour()
         view.displayIfNeeded()
     }
 
     override func awakeFromNib() {
         view = mainView;
-        getRandomColour()
+        view.frame = NSMakeRect(0, 0, 2000, 2000);
+        makeColour()
         drawColour()
     }
 
@@ -30,11 +43,9 @@ class GradientController: NSObject {
         drawColour()
     }
 
-    func getRandomColour() {
-        let hueRand = 360.randomLowerInt()
-        let hue = CGFloat(hueRand) / 360.0
-
-        colour = NSColor(calibratedHue:hue, saturation: 0.398, brightness: 0.773, alpha: 1.0)
+    func makeColour() {
+        let calibratedHue = CGFloat(hue) / 360.0
+        colour = NSColor(calibratedHue:calibratedHue, saturation: 0.398, brightness: 0.773, alpha: 1.0)
     }
 
     func drawColour() {

@@ -1,4 +1,5 @@
 import AppKit
+import Foundation
 
 class PreviewWindowController: NSWindowController, ButtonDelegate {
 
@@ -27,5 +28,7 @@ class PreviewWindowController: NSWindowController, ButtonDelegate {
         }
     }
 
-
+    override func keyUp(event: NSEvent) {
+        println(event.keyCode);
+    }
 }

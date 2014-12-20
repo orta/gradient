@@ -12,4 +12,14 @@
     [_delegate buttonMouseUp];
 }
 
+- (void)keyDown:(NSEvent *)theEvent
+{
+    [_delegate buttonMouseDown];
+}
+
+- (void)keyUp:(NSEvent *)theEvent
+{
+    [_delegate buttonMouseUp];
+}
+
 @end
