@@ -752,7 +752,7 @@
                     <button verticalHuggingPriority="750" id="IfL-Qq-TJs">
                         <rect key="frame" x="378" y="13" width="88" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Redraw" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5CB-c4-fbN">
+                        <buttonCell key="cell" type="push" title="Redraw" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5CB-c4-fbN">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -763,11 +763,11 @@
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" id="v4e-di-PRV">
                         <rect key="frame" x="-1" y="59" width="482" height="333"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" id="ZMR-RW-UgM">
+                        <clipView key="contentView" wantsLayer="YES" id="ZMR-RW-UgM">
                             <rect key="frame" x="1" y="1" width="166" height="79"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <customView id="EaM-Jz-nIR" customClass="GradientView" customModule="Gradients" customModuleProvider="target">
+                                <customView wantsLayer="YES" id="EaM-Jz-nIR" customClass="GradientView" customModule="Gradients" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="331"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </customView>
@@ -798,6 +798,9 @@ IA
                     </button>
                 </subviews>
             </view>
+            <connections>
+                <outlet property="initialFirstResponder" destination="EiT-Mj-1SZ" id="t3L-Sp-rgU"/>
+            </connections>
             <point key="canvasLocation" x="413" y="435"/>
         </window>
         <window title="Desktop Background Preview" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QIQ-f5-b9L">

@@ -2,24 +2,24 @@ import Cocoa
 
 class GradientController: NSObject {
 
-    var hue = 360.randomLowerInt()
+    var hue = 100 //360.randomLowerInt()
+    var hueShift = 0;
     var view: GradientView!
 
     @IBOutlet weak var mainView: GradientView!
     @IBOutlet weak var previewView: GradientView!
 
     var colour: NSColor!
+    var rightColour: NSColor!
 
     @IBAction func changeHue(sender: NSMenuItem) {
         let numberFormatter = NSNumberFormatter()
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         let huePercent = numberFormatter.numberFromString(sender.title)
 
-        hue = Int(360.0 * huePercent!.floatValue)
-        makeColour()
-        drawColour()
+        view.contentFilters = [hueShiftFilter(huePercent!)]
     }
-    
+
     @IBAction func redrawClicked(sender: AnyObject) {
         hue = 360.randomLowerInt()
         makeColour()
@@ -34,6 +34,11 @@ class GradientController: NSObject {
         drawColour()
     }
 
+    func hueShiftFilter(percent:NSNumber) -> CIFilter {
+        hueShift = Int(360.0 * percent.floatValue) - 180
+        return CIFilter(name: "CIHueAdjust", withInputParameters: ["inputAngle": hueShift])
+    }
+
     func switchViews() {
         if view == mainView {
             view = previewView
@@ -46,10 +51,17 @@ class GradientController: NSObject {
     func makeColour() {
         let calibratedHue = CGFloat(hue) / 360.0
         colour = NSColor(calibratedHue:calibratedHue, saturation: 0.398, brightness: 0.773, alpha: 1.0)
+
+        let red = CGFloat(Float(100.randomLowerInt()) / 100.0)
+        let green = CGFloat(Float(100.randomLowerInt()) / 100.0)
+        let blue = CGFloat(Float(100.randomLowerInt()) / 100.0)
+
+        rightColour = NSColor(calibratedRed: red, green: green, blue: blue, alpha: 1.0)
     }
 
     func drawColour() {
-        let point = GradientPoint(startColour: colour, endColour:NSColor.blackColor());
+
+        let point = GradientPoint(startColour: colour, endColour:rightColour);
 
         view.empty()
         view.addGradientPoint(point)
@@ -65,6 +77,7 @@ class GradientController: NSObject {
 }
 
 extension Int {
+
     func randomLowerInt() -> Int {
         return Int(arc4random_uniform(UInt32(self)))
     }

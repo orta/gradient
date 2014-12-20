@@ -14,12 +14,19 @@
 
 - (void)keyDown:(NSEvent *)theEvent
 {
-    [_delegate buttonMouseDown];
+    if (theEvent.keyCode == 49) {
+        [_delegate buttonMouseDown];
+    }
+    [super keyDown:theEvent];
+
 }
 
 - (void)keyUp:(NSEvent *)theEvent
 {
-    [_delegate buttonMouseUp];
+    if (theEvent.keyCode == 49) {
+        [_delegate buttonMouseUp];
+    }
+    [super keyUp:theEvent];
 }
 
 @end
