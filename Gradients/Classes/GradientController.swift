@@ -40,6 +40,8 @@ class GradientController: NSObject {
     }
 
     func switchViews() {
+        previewView.contentFilters = mainView.contentFilters
+
         if view == mainView {
             view = previewView
         } else {
