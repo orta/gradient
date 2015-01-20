@@ -10,7 +10,7 @@ struct GradientPoint {
 
     func drawIntoRect(rect: NSRect) {
         let gradient = createGradient()
-        let endPoint = NSPoint(x: rect.size.width, y: 0);
+        let endPoint = NSPoint(x: rect.size.width + 600, y: 600);
         gradient.drawFromPoint(NSPoint(x: 0, y: 0), toPoint: endPoint, options: NSGradientDrawsBeforeStartingLocation);
     }
 }

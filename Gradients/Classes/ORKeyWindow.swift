@@ -14,8 +14,11 @@ class ORKeyWindow: NSWindow {
         let down = 125
         let left = 123
         let right = 124
+        let r = 15
 
-        if (Int(theEvent.keyCode) == space){
+        let keycode = Int(theEvent.keyCode)
+
+        if (keycode == space){
             if (self.alphaValue == 1) {
 
                 self.animator().alphaValue = 0.1
@@ -34,12 +37,27 @@ class ORKeyWindow: NSWindow {
             return;
         }
 
-        if(Int(theEvent.keyCode) == enter){
+        if (keycode == enter){
+            let gradient = gradientController.view
+            let rep = gradient.bitmapImageRepForCachingDisplayInRect(gradient.bounds);
+            gradient.cacheDisplayInRect(gradient.bounds, toBitmapImageRep: rep!);
+
+            let data = rep?.representationUsingType( .NSJPEGFileType, properties: ["":""])
+
+            let path = "/tmp/wallpaper.jpg"
+            data?.writeToFile(path, atomically: true)
+            let localURL = NSURL.fileURLWithPath(path)
+
+            NSWorkspace.sharedWorkspace().setDesktopImageURL(localURL!, forScreen: NSScreen.mainScreen()!, options: ["":""], error: nil);
+
+            return;
+        }
+
+        if (keycode == r){
             gradientController.createNewGradient()
             return;
         }
 
-        let keycode = Int(theEvent.keyCode)
         if (keycode == up || keycode == right || keycode == left || keycode == down ){
             let d = 50
             let t = (keycode == up) ? d : 0
