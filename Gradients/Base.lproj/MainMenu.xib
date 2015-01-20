@@ -776,6 +776,7 @@
             <connections>
                 <outlet property="desktopGradientWindow" destination="QIQ-f5-b9L" id="xqE-u1-2ha"/>
                 <outlet property="gradientController" destination="wgB-at-BeW" id="nrl-tC-Miu"/>
+                <outlet property="gradientScroll" destination="v4e-di-PRV" id="Hbd-Zg-HVd"/>
                 <outlet property="initialFirstResponder" destination="EiT-Mj-1SZ" id="t3L-Sp-rgU"/>
             </connections>
             <point key="canvasLocation" x="382" y="382"/>

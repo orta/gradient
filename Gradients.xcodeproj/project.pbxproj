@@ -13,7 +13,6 @@
 		601121B91A2C50EB004CDE18 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601121B81A2C50EB004CDE18 /* GradientView.swift */; };
 		601121BB1A2C88C8004CDE18 /* GradientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601121BA1A2C88C8004CDE18 /* GradientController.swift */; };
 		604D77EB1A346EAB006D55E4 /* PreviewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604D77EA1A346EAB006D55E4 /* PreviewWindowController.swift */; };
-		604D77F11A34701A006D55E4 /* ORUpAndDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D77F01A34701A006D55E4 /* ORUpAndDownButton.m */; };
 		6086004A1A6F060B00736BA8 /* ORKeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608600491A6F060B00736BA8 /* ORKeyWindow.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +28,6 @@
 		601121BA1A2C88C8004CDE18 /* GradientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientController.swift; sourceTree = "<group>"; };
 		604D77EA1A346EAB006D55E4 /* PreviewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewWindowController.swift; sourceTree = "<group>"; };
 		604D77EE1A347019006D55E4 /* Gradients-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gradients-Bridging-Header.h"; sourceTree = "<group>"; };
-		604D77EF1A34701A006D55E4 /* ORUpAndDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORUpAndDownButton.h; sourceTree = "<group>"; };
-		604D77F01A34701A006D55E4 /* ORUpAndDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORUpAndDownButton.m; sourceTree = "<group>"; };
 		608600491A6F060B00736BA8 /* ORKeyWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORKeyWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +102,6 @@
 				601121B81A2C50EB004CDE18 /* GradientView.swift */,
 				601121BA1A2C88C8004CDE18 /* GradientController.swift */,
 				604D77EA1A346EAB006D55E4 /* PreviewWindowController.swift */,
-				604D77EF1A34701A006D55E4 /* ORUpAndDownButton.h */,
-				604D77F01A34701A006D55E4 /* ORUpAndDownButton.m */,
 				604D77EE1A347019006D55E4 /* Gradients-Bridging-Header.h */,
 				608600491A6F060B00736BA8 /* ORKeyWindow.swift */,
 			);
@@ -184,7 +179,6 @@
 			files = (
 				6086004A1A6F060B00736BA8 /* ORKeyWindow.swift in Sources */,
 				601121BB1A2C88C8004CDE18 /* GradientController.swift in Sources */,
-				604D77F11A34701A006D55E4 /* ORUpAndDownButton.m in Sources */,
 				601121B91A2C50EB004CDE18 /* GradientView.swift in Sources */,
 				604D77EB1A346EAB006D55E4 /* PreviewWindowController.swift in Sources */,
 				6011219D1A2C508E004CDE18 /* AppDelegate.swift in Sources */,

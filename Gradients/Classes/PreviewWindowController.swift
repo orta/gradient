@@ -1,11 +1,10 @@
 import AppKit
 import Foundation
 
-class PreviewWindowController: NSWindowController, ButtonDelegate {
+class PreviewWindowController: NSWindowController {
 
     @IBOutlet weak var mainGradientWindow: NSWindow!
     @IBOutlet weak var gradientController: GradientController!
-
 
     func buttonMouseUp() {
         mainGradientWindow.animator().alphaValue = 1;
