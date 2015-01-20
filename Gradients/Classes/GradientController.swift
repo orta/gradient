@@ -1,8 +1,8 @@
 import Cocoa
 
-class GradientController: NSObject {
+public class GradientController: NSObject {
 
-    var hue = 100 //360.randomLowerInt()
+    var hue = 100;
     var hueShift = 0;
     var view: GradientView!
 
@@ -20,14 +20,14 @@ class GradientController: NSObject {
         view.contentFilters = [hueShiftFilter(huePercent!)]
     }
 
-    @IBAction func redrawClicked(sender: AnyObject) {
+    public func createNewGradient() {
         hue = 360.randomLowerInt()
         makeColour()
         drawColour()
         view.displayIfNeeded()
     }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         view = mainView;
         view.frame = NSMakeRect(0, 0, 2000, 2000);
         makeColour()
@@ -62,7 +62,6 @@ class GradientController: NSObject {
     }
 
     func drawColour() {
-
         let point = GradientPoint(startColour: colour, endColour:rightColour);
 
         view.empty()

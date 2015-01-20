@@ -14,7 +14,7 @@ class PreviewWindowController: NSWindowController, ButtonDelegate {
     }
 
     func buttonMouseDown() {
-        mainGradientWindow.animator().alphaValue = 0
+        mainGradientWindow.animator().alphaValue = 0.1
         NSWorkspace.sharedWorkspace().hideOtherApplications();
 
         if let screen = mainGradientWindow.screen {
